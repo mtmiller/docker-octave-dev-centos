@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:centos6
 MAINTAINER Mike Miller <mike@mtmxr.com>
 
 # Update and set up the EPEL repository
