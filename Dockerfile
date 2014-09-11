@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:centos5
 MAINTAINER Mike Miller <mike@mtmxr.com>
 
 # Update and set up the EPEL repository
@@ -13,8 +13,8 @@ RUN yum install -y bison flex gcc-c++ gcc-gfortran gnuplot gperf make \
 RUN yum install -y GraphicsMagick-c++-devel arpack-devel blas-devel \
     fftw-devel fltk-devel fontconfig-devel freetype-devel gl2ps-devel \
     glpk-devel hdf5-devel java-devel lapack-devel libXft-devel \
-    libcurl-devel mesa-libGL-devel mesa-libGLU-devel pcre-devel \
-    qhull-devel qrupdate-devel qscintilla-devel qt-devel readline-devel \
+    curl-devel mesa-libGL-devel mesa-libGLU-devel pcre-devel \
+    qhull-devel qrupdate-devel readline-devel \
     suitesparse-devel zlib-devel
 
 CMD bash
